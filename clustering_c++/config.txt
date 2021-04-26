@@ -1,0 +1,46 @@
+BRANCH_AND_BOUND_TOL = 1e-4
+# single thread (1), multi-thread (> 1)
+BRANCH_AND_BOUND_PARALLEL = 2
+BRANCH_AND_BOUND_MAX_NODES = 100
+# best first (0),  depth first (1), breadth first (2)
+BRANCH_AND_BOUND_VISITING_STRATEGY = 0
+
+# numer of threads for the matlab session at root
+SDP_SOLVER_SESSION_THREADS_ROOT = 4
+# numer of threads for the matlab session (must-link and cannot-link)
+SDP_SOLVER_SESSION_THREADS = 2
+# sdp solver path
+SDP_SOLVER_FOLDER = /home/antonio/Dropbox/clustering_github/SDPNAL/
+# precision of the sdp solver
+SDP_SOLVER_TOL = 1e-5
+# do not display log (0), display log (1)
+SDP_SOLVER_VERBOSE = 0
+# max cutting plane iterations (root)
+SDP_SOLVER_MAX_CP_ITER_ROOT = 40
+# max cutting plane iterations (must-link and cannot-link)
+SDP_SOLVER_MAX_CP_ITER = 20
+# cutting plane tolerance
+SDP_SOLVER_CP_TOL = 1e-5
+# max number cutting planes
+SDP_SOLVER_MAX_INEQ = 100000
+# fraction of the inequalities to inherit
+SDP_SOLVER_INHERIT_PERC = 1.0
+# tolerance for checking the violation
+SDP_SOLVER_EPS_INEQ = 1e-4
+# tolerance for active inequalities
+SDP_SOLVER_EPS_ACTIVE = 1e-6
+# maximum number of violated pair inequalities to separate
+SDP_SOLVER_MAX_PAIR_INEQ = 100000
+# fraction of the most violated pair inequalities to add
+SDP_SOLVER_PAIR_PERC = 0.05
+# maximum number of violated triangle inequalities to separate
+SDP_SOLVER_MAX_TRIANGLE_INEQ = 100000
+# fraction of the most violated triangle inequalities to add
+SDP_SOLVER_TRIANGLE_PERC = 0.05
+
+# constrained k-means (0), sdp-based heuristic (1)
+KMEANS_SDP_BASED = 1
+KMEANS_MAX_ITER = 100
+KMEANS_N_START = 50
+# do not display log (0), display log (1)
+KMEANS_VERBOSE = 0
