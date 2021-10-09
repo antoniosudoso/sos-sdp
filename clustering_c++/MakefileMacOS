@@ -1,0 +1,17 @@
+matlab_path = /Applications/MATLAB_R2019b.app
+sources = main.cpp matlab_util.cpp sdp_solver_util.cpp sdp_branch_and_bound.cpp kmeans_util.cpp Kmeans.cpp JobQueue.cpp util.cpp ThreadPool.cpp
+objects = $(sources:.cpp=.o)
+
+all: bb
+
+bb: $(objects)
+	clang++ -L $(matlab_path)/extern/bin/maci64/ -o $@ $^ -larmadillo -pthread -llapack -lblas -lMatlabDataArray -lMatlabEngine -Wl,-rpath,$(matlab_path)/extern/bin/maci64/
+
+%.o: %.cpp
+		clang++ -std=c++11 -Wall -O2 -o $@ -c $< -I $(matlab_path)/extern/include/
+
+
+.PHONY: clean
+		
+clean:
+		rm -f bb *.o
