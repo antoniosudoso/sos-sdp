@@ -1,4 +1,4 @@
-## SOS-SDP: an Exact Solver for Minimum Sum-of-Squares Clustering
+## SOS-SDP: An Exact Solver for Minimum Sum-of-Squares Clustering
 
 <p align="center">
   <img src="https://github.com/antoniosudoso/sos-sdp/blob/main/logo.svg" width="200" height="200" />
@@ -7,7 +7,7 @@
 
 **SOS-SDP** is an exact algorithm based on the branch-and-bound technique for solving the Minimum Sum-of-Squares Clustering (MSSC) problem described in the paper ["SOS-SDP: an Exact Solver for Minimum Sum-of-Squares Clustering"](https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2022.1166). This repository contains the C++ source code, the MATLAB scripts, and the datasets used for the experiments.
 
-> V. Piccialli, A. M. Sudoso, A. Wiegele, SOS-SDP: an Exact Solver for Minimum Sum-of-Squares Clustering, **INFORMS Journal on Computing** (2022), https://doi.org/10.1287/ijoc.2022.1166.
+> V. Piccialli, A. M. Sudoso, A. Wiegele (2022). SOS-SDP: An Exact Solver for Minimum Sum-of-Squares Clustering, **INFORMS Journal on Computing**, https://doi.org/10.1287/ijoc.2022.1166.
 
 ## Installation
 **SOS-SDP** calls the semidefinite programming solver [SDPNAL+](https://blog.nus.edu.sg/mattohkc/softwares/sdpnalplus/) by using the [MATLAB Engine API](https://www.mathworks.com/help/matlab/calling-matlab-engine-from-cpp-programs.html) for C++. It requires the MATLAB engine library *libMatlabEngine* and the Matlab Data Array library *libMatlabDataArray*. **SOS-SDP** uses the [Armadillo](http://arma.sourceforge.net/) library to handle matrices and linear algebra operations efficiently. Before installing Armadillo, first install OpenBLAS and LAPACK along with the corresponding development files.
