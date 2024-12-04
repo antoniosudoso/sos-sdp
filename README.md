@@ -168,11 +168,11 @@ BEST: 72.9647
 
 ## Related Works
 
-> V. Piccialli, A. Russo Russo, A. M. Sudoso, An Exact Algorithm for Semi-supervised Minimum Sum-of-Squares Clustering. **Computers & Operations Research** (2022).
+> V. Piccialli, A. Russo Russo, A. M. Sudoso (2022). An exact algorithm for semi-supervised minimum sum-of-squares clustering. **Computers & Operations Research**.
 - Paper: https://doi.org/10.1016/j.cor.2022.105958
 - Code: https://github.com/antoniosudoso/pc-sos-sdp
 
-> Piccialli, V., Sudoso, A. M. Global optimization for cardinality-constrained minimum sum-of-squares clustering via semidefinite programming. **Mathematical Programming** (2023).
+> V. Piccialli, A. M. Sudoso (2023). Global optimization for cardinality-constrained minimum sum-of-squares clustering via semidefinite programming. **Mathematical Programming**.
 - Paper: https://doi.org/10.1007/s10107-023-02021-8
 - Code: https://github.com/antoniosudoso/cc-sos-sdp
 
